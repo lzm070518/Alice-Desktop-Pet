@@ -4,7 +4,7 @@ The application source, developer edition and maintenance credentials are not
 part of this workflow. Existing published releases are never changed or deleted.
 """
 from pathlib import Path, PurePosixPath
-import hashlib,json,os,subprocess
+import hashlib,json,os,re,subprocess
 
 def api(path):
     return json.loads(subprocess.check_output(['gh','api',path],text=True))
@@ -12,7 +12,7 @@ def api(path):
 manifest=json.loads(Path('.release/assets.json').read_text())
 repo=os.environ['GITHUB_REPOSITORY']
 assert repo==manifest['repository']
-assert manifest['edition']=='user' and manifest['version']=='3.2.0'
+assert manifest['edition']=='user' and re.fullmatch(r'\d+\.\d+\.\d+',manifest['version'])
 assert manifest['tag']=='v'+manifest['version']
 base='repos/'+repo+'/releases/'+str(manifest['release_id'])
 release=api(base)
@@ -34,7 +34,7 @@ if not release['draft']:
     print('Already published and verified; history preserved:',release['html_url'])
     raise SystemExit(0)
 
-work=Path(os.environ['RUNNER_TEMP'])/'alice-user-release-3.2.0'
+work=Path(os.environ['RUNNER_TEMP'])/('alice-user-release-'+manifest['version'])
 work.mkdir(exist_ok=True)
 for asset in manifest['assets']:
     assert PurePosixPath(asset['name']).name==asset['name']
