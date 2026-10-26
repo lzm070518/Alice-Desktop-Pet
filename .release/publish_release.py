@@ -67,7 +67,7 @@ for name,want in expected.items():
 
 assets=verified_assets()
 request=work/'publish.json'
-request.write_text(json.dumps({'draft':False,'prerelease':False,'make_latest':'true','name':manifest['title'],'body':manifest['body']},ensure_ascii=False))
+request.write_text(json.dumps({'tag_name':manifest['tag'],'draft':False,'prerelease':False,'make_latest':'true','name':manifest['title'],'body':manifest['body']},ensure_ascii=False))
 published=json.loads(subprocess.check_output(['gh','api','--method','PATCH',base,'--input',str(request)],text=True))
 assert not published['draft'] and published['tag_name']==manifest['tag'] and published['name']==manifest['title']
 print('Published:',published['html_url'],flush=True)
