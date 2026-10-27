@@ -3,6 +3,9 @@ This is a desktop pet, and the pet character is a reporter from the game "Identi
 
 ## 下载 / Download
 
+- [Alice 3.2.1 用户版 · 聊天响应优化 · Windows 64位安装包](https://github.com/lzm070518/Alice-Desktop-Pet/releases/download/v3.2.1/Alice-3.2.1-Setup.exe)
+- [3.2.1 更新说明与校验](https://github.com/lzm070518/Alice-Desktop-Pet/releases/download/v3.2.1/Alice-3.2.1-Notes-Checksums.zip)
+- [3.2.1 发布页面](https://github.com/lzm070518/Alice-Desktop-Pet/releases/tag/v3.2.1)
 - [Alice 3.2.0 用户版 · Windows 64位安装包](https://github.com/lzm070518/Alice-Desktop-Pet/releases/download/v3.2.0/Alice-3.2.0-Setup.exe)
 - [3.2.0 更新说明、校验和动作预览](https://github.com/lzm070518/Alice-Desktop-Pet/releases/download/v3.2.0/Alice-3.2.0-Notes-Checksums-Previews.zip)
 - [3.2.0 发布页面](https://github.com/lzm070518/Alice-Desktop-Pet/releases/tag/v3.2.0)
