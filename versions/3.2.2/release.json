@@ -1,0 +1,18 @@
+{
+  "name": "Alice 桌面宠物",
+  "edition": "普通版",
+  "version": "3.2.2",
+  "windows_version": "3.2.2.0",
+  "platform": "Windows x64",
+  "release_type": "普通版重建发行",
+  "installer": {
+    "filename": "Alice-3.2.2-Setup.exe",
+    "bytes": 141490480,
+    "sha256": "64e9956bf766ee0d4acf053d0104ea8789a26dd7933308cf225c6935cff3f2cd"
+  },
+  "installed_client": {
+    "filename": "Alice.exe",
+    "bytes": 514491904,
+    "sha256": "c6a4637ea08f52b6883ecad4162e3a5c23aaf9ff418b3c16a85c1a653c0ae5af"
+  }
+}
