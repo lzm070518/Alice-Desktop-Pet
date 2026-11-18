@@ -1,27 +1,25 @@
-name: Publish Alice user release
-
+name: Upload Alice 3.2.3 user release assets
 on:
   workflow_dispatch:
-
 permissions:
   contents: write
-
 concurrency:
-  group: alice-user-release-publication
+  group: upload-alice-user-3-2-3
   cancel-in-progress: false
-
 jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Check out the selected delivery branch
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
+          sparse-checkout: |
+            versions/3.2.3
           fetch-depth: 1
-          persist-credentials: false
-      - name: Verify and publish the user installer
+      - name: Retrieve the versioned installer from Git LFS
+        run: git lfs pull --include="versions/3.2.3/Alice-3.2.3-Setup.exe" --exclude=""
+      - name: Upload the installer and release notes to the existing draft
         env:
           GH_TOKEN: ${{ github.token }}
-          GH_PROMPT_DISABLED: "1"
-        run: python3 .release/publish_release.py
+        run: |
+          gh release upload v3.2.3 versions/3.2.3/Alice-3.2.3-Setup.exe versions/3.2.3/Release-Notes.md --repo lzm070518/Alice-Desktop-Pet
