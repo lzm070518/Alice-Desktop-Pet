@@ -1,0 +1,4 @@
+dcc0a66718d0d9a9c7d6de2a8cdde7c385be31548a8b4a42e6d0eb70ce99cd45  Alice-3.2.0-Setup.exe
+936552cf48bb02141cf7903ed744aa7611b1de3fbad3ab3287f2355658e58c4c  Alice-3.2.0-Notes-Checksums-Previews.zip
+85eb6a6e6103dc0ccf78c6c3fed8a9b6f06ca36665edbb2521926448c3a7e31a  Release-Notes.md
+28ae79fab5d30c4c6fbd5f1d546e6815c1190f5dfe4bca5b23f77284b6fe50cd  THIRD_PARTY_NOTICES.md

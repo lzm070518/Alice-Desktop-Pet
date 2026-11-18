@@ -1,0 +1,4 @@
+175c3fd7b1daa7578e0d76ef8f15fe0bdcfe5fd78f19820e3281b56d2e1733b4  Alice-3.2.1-Notes-Checksums.zip
+c973ba42f7283ee7c4709f271ba893db19be72c64c0f57898fce058f7e135a09  Alice-3.2.1-Setup.exe
+1bb56d1bb56f562b39946f641a0eaee83a71975e249ccaaa9429c3946bc17c3c  Release-Notes.md
+28ae79fab5d30c4c6fbd5f1d546e6815c1190f5dfe4bca5b23f77284b6fe50cd  THIRD_PARTY_NOTICES.md
