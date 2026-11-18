@@ -2,7 +2,7 @@
 
 31 项连续动作与 120 FPS 时间线。本版适用于 64 位 Windows。
 
-[下载安装程序 · Alice-3.2.0-Setup.exe](https://github.com/lzm070518/Alice-Desktop-Pet/releases/download/v3.2.0/Alice-3.2.0-Setup.exe)
+[下载安装程序 · Alice-3.2.0-Setup.exe](https://github.com/lzm070518/Alice-Desktop-Pet/releases/download/v3.2.0/Alice-3.2.0-Setup.exe) · [查看版本目录中的安装文件](Alice-3.2.0-Setup.exe)
 
 下载后可用 PowerShell 验证文件完整性。
 
